@@ -13,29 +13,29 @@ Let’s jump into the solutions and explore the thought process behind each task
 
 ## Task 1:
 
-  ![crackstation 1](https://github.com/user-attachments/assets/bb73661a-45f2-4045-8e0a-3654fa71e871)
+![crackstation 1](https://github.com/user-attachments/assets/aa8cb993-add4-4693-9a02-789c8121dbf5)
 
 
 Solution: This task is straightforward, as the name indicates. Let's search for "crack station" on Google, where we found a website to crack the hash [crackstation](https://crackstation.net/)
 
-![image](https://github.com/user-attachments/assets/0df9cd00-769d-4299-a533-8a270bd69bb4)
+![image](https://github.com/user-attachments/assets/514efa1e-cd6b-4b75-9e68-d0fd471920e7)
 
 and here we have our flag!
 
 ## Task 2:
 
-  ![crackstation2](https://github.com/user-attachments/assets/a84eedfd-3ef1-4789-a7ce-435657625e12)
+![crackstation2](https://github.com/user-attachments/assets/471e98e9-8f3e-4ee7-b54e-b4dfed43ade1)
 
 
 Solution: Let's check [crackstation](https://crackstation.net/) too for this hash:
 
-![image](https://github.com/user-attachments/assets/905febcf-c65f-4309-932a-149f5cccde4c)
+![image](https://github.com/user-attachments/assets/33f47ff0-df16-43b2-b84f-90b0ae1c903d)
 
 and here we have our flag!
 
 ## Task 3:
 
-  ![econding looop](https://github.com/user-attachments/assets/c757e612-be39-454e-9544-a7ac14e79d09)
+![econding looop](https://github.com/user-attachments/assets/b5535b78-15ad-4375-8ec5-e083f589aa6e)
 
 
 I uploaded this encrypted flag for the challenge, so take a look!
@@ -45,23 +45,23 @@ I uploaded this encrypted flag for the challenge, so take a look!
 
 We can see that the flag is encrypted in base64, so let's visit the CyberChef website to decode it. https://gchq.github.io/CyberChef/
 
-![image](https://github.com/user-attachments/assets/530467f1-6806-4cc1-8a6b-6d730c96857b)
+![image](https://github.com/user-attachments/assets/c69df917-6268-4c37-bbf0-3ba5c8785650)
 
 We observe that the output is in hex format, so let's proceed to decode it.
 
-![image](https://github.com/user-attachments/assets/10b9c424-9a58-4d06-b075-dfee252e9699)
+![image](https://github.com/user-attachments/assets/229a749b-e0a6-4047-916d-c941045b0517)
 
 The output is in binary now, so let’s figure out how to decode it.
 
-![image](https://github.com/user-attachments/assets/dcdaa532-96d1-4697-8a8b-1e2d2c7170e1)
+![image](https://github.com/user-attachments/assets/893c7172-5350-413f-82b3-d5cd19b3cdae)
 
 And now we’ve got a decimal output! Let’s take a moment to decode it together:
 
-![image](https://github.com/user-attachments/assets/0a706a8f-16df-4325-b97e-89a83c8d2519)
+![image](https://github.com/user-attachments/assets/a8cee7a7-9b6b-4caf-aa50-11abd5e736ae)
 
 Finally, we found our flag, but it was still encrypted. We noticed that the flag consists only of characters without numbers, so I suspect it's a ROT13 encryption. Let's try to decode it:
 
-![image](https://github.com/user-attachments/assets/8c656d52-5d09-4af5-9035-789634c64a94) 
+![image](https://github.com/user-attachments/assets/17391d6d-6c89-4152-8ddf-99a5bb6c5a4f)
 
 Here is our flag:
 
@@ -69,7 +69,7 @@ Here is our flag:
 
 ## Task 4:
 
-![myxor](https://github.com/user-attachments/assets/e5040228-234d-4c72-812a-7550d1136d9d)
+![myxor](https://github.com/user-attachments/assets/fbcc789d-380b-475b-96a1-1c2424d20b0d)
 
 
  I uploaded this encrypted flag for the challenge, so take a look!
@@ -85,7 +85,7 @@ Solution Steps:
     
 Step 1: Understand the XOR Encryption and don't forget these properties
 
- ![image](https://github.com/user-attachments/assets/548d5cd5-fb07-4e38-b763-844b448e3a9b)
+![image](https://github.com/user-attachments/assets/8c461766-4520-406a-8d0f-bab12c7dd974)
 
  This challenge uses XOR encryption, where: "Cipher(encFlag) = Flag XOR Key" If we know part of the plaintext (Flag), we can deduce part of the key: "Key = Cipher XOR Flag"
 
@@ -93,19 +93,19 @@ Step 2: Convert the Cipher Text & XOR to Find the Key
 
 The ciphertext is provided in hexadecimal format. First, we decode it for easier manipulation https://gchq.github.io/CyberChef/ :
 
-![image](https://github.com/user-attachments/assets/8ccd6345-9329-49f7-85b7-88c76b520677)
+![image](https://github.com/user-attachments/assets/d2c886b6-0c8f-443d-a7ee-38ee9aa1864b)
 
 This reveals the key:  #kingisthekey# 
 
 So let's get our flag:
 
-![image](https://github.com/user-attachments/assets/828f38c5-c78b-41a0-8e72-d1a5f4ac54cd)
+![image](https://github.com/user-attachments/assets/362aaba1-8629-42c9-9bd0-03ec15d19e1d)
 
     SECURINETSISITCOM{NICE_YOU_FIND_THE_TRICK___GO_TO_THE_NEXT_TASK}
 
 ## Task 5:
 
-![xor elliot](https://github.com/user-attachments/assets/b8b51b02-8199-421b-a540-eb549ffb12ba)
+![xor elliot](https://github.com/user-attachments/assets/90845467-6b68-442f-8e25-3eae024c1113)
 
 ### HINT: This challenge requires performing a visual XOR between the RGB bytes of the two images and note that you need to resize the images to decode it
 
@@ -133,14 +133,14 @@ cv2.imwrite('flag.jpg',xor_img)
 
 Here’s our new XORed image! Let’s go ahead and open it up.
 
-![flag](https://github.com/user-attachments/assets/2ec3a70c-035d-45de-80a8-0ec3da1632f1)
+![flag](https://github.com/user-attachments/assets/5ba4af94-d8cf-41ea-9e9b-38cd159e7961)
 
     SECURINETSISITCOM{XOR_1T_1F_U_C8N}
 
 
 ## Task 6:
 
-![RSA MY LOVE](https://github.com/user-attachments/assets/1743cffd-87c5-46d9-8a24-b15e796ff802)
+![RSA MY LOVE](https://github.com/user-attachments/assets/3de971a2-797b-4b88-8dfe-c591bbd27f6e)
 
 The attached file has everything you need about the task:
 
