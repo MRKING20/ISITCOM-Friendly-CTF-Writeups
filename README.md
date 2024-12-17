@@ -1,4 +1,4 @@
-#   SECURINETS ISITCOM Friendly CTF - Writeups 🐱‍💻
+#   SECURINETS ISITCOM Friendly CTF - Crypto Writeups 🐱‍💻
 
 Welcome to the write-ups for the Crypto Challenges from the SECURINETS ISITCOM Friendly CTF! https://www.facebook.com/share/p/1AtFziBXjD/
 
