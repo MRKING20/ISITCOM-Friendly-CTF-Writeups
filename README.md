@@ -1,6 +1,6 @@
 #   SECURINETS ISITCOM Friendly CTF - Crypto Writeups 🐱‍💻
 
-Welcome to the write-ups for the Crypto Challenges from the SECURINETS ISITCOM Friendly CTF! https://www.facebook.com/share/p/1AtFziBXjD/
+Welcome to the write-ups for the Crypto Challenges from the SECURINETS ISITCOM Friendly CTF! 
 
 As the author of these tasks, I aimed to design engaging challenges that would test everyone's cryptography skills. In this blog, I’ll go through the solutions for the six challenges I created, which cover a variety of topics like hash cracking, XOR encryption, and risks in RSA. 
 
